@@ -24,7 +24,7 @@ body {
 
 #main-navbar .container {
   display: grid;
-  grid-template-columns: 40% 30%;
+  grid-template-columns: 20% 40%;
   grid-gap: 30%;
 }
 
@@ -32,6 +32,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+#main-navbar a {
+    color: #000;
 }
 
 #main-navbar .container .left-nav img {
@@ -44,6 +48,13 @@ body {
   justify-content: flex-end;
 }
 
+#main-navbar .container .right-nav a.about-us {
+    margin-right: 25px;
+}
+
+#main-navbar .container .right-nav h6 {
+    margin-top: 8px;
+}
 #main-navbar .container .right-nav .btn.employer-login-btn {
   width: 180px;
   height: 40px;
@@ -122,10 +133,14 @@ body {
 }
 
 #search-bar-part .container {
+    
+  padding-bottom: 30px;
+}
+
+#search-bar-part .container .search-bar-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 30px;
 }
 
 #search-bar-part .container .search-bar {
@@ -138,6 +153,12 @@ body {
   align-items: center;
   justify-content: flex-start;
   font-size: 18px;
+}
+
+
+#search-bar-part .container a.most-recent-jobs {
+    margin-left: 27px;
+    color: #000;
 }
 
 /* #search-bar-part .container .search-bar .search-icon img {
@@ -155,7 +176,7 @@ body {
 /* ABOUT SECTION */
 
 #about {
-  background-image: url("/img/caamz-hig-res-transformed.jpeg");
+  /* background-image: url("/img/CamzOpaqueHiRes.jpg"); */
   /* opacity: 0.5; */
   height: 400px;
   background-position: center;
@@ -313,3 +334,77 @@ a {
   font-size: 16px;
   font-weight: 400;
 }
+
+
+/* MEET THE TEAM */
+
+@media screen and (min-width: 1400px) {
+    #meet-the-team .container {
+        max-width: 1300px;
+    }
+}
+
+#meet-the-team  {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #fae036;
+}
+#meet-the-team .title-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: #1e4b8b;
+    margin-bottom: 35px;
+}
+
+#meet-the-team .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#meet-the-team .container .team-grid .image-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#meet-the-team .container .team-grid .image-part img {
+    width: 250px;
+}
+
+#meet-the-team .container .team-grid .designation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#meet-the-team .container .team-grid .designation h5 {
+    margin-bottom: 2px;
+}
+
+#meet-the-team .container .team-grid .designation h6 {
+    font-weight: 800;
+}
+
+/* FOOTER */
+
+@media screen and (min-width: 1800px) {
+    footer .container {
+        max-width: 1700px;
+    }
+}
+
+
+footer
+
+footer .upper-content {
+    display: grid;
+    grid-template-columns: 30% 25% 30% 15%;
+}
+
+img.image-logo-footer {
+    width: 30px;
+}
+
