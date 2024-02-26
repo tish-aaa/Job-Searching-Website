@@ -37,8 +37,9 @@ body {
 #main-navbar .container .center-nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 11px;
+  gap: 61px;
 }
 #main-navbar .container .center-nav a.nav-item:hover {
   color: #0e3e83;
@@ -52,7 +53,7 @@ body {
 #main-navbar .container .left-nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
 }
 
 #main-navbar a {
@@ -66,7 +67,7 @@ body {
 #main-navbar .container .right-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: end;
 }
 
 #main-navbar .container .right-nav a.about-us {
@@ -112,10 +113,11 @@ body {
 @media screen and (max-width: 1799px) and (min-width: 1200px) {
   #main-navbar .container {
     max-width: 1500px;
-    grid-template-columns: 20% 30% 25%;
-    grid-gap: 12%;
+    grid-template-columns: 20% auto 30%;
   }
 }
+
+/* MEDIA QUERIES */
 
 /* MOST RECENT JOBS */
 
@@ -422,6 +424,7 @@ a {
   width: 442px;
   line-height: 2;
   font-size: 50px;
+  text-transform: capitalize;
 }
 
 /* HIRE SECTION */
@@ -584,6 +587,7 @@ a {
 #meet-the-team .container .team-grid .image-part:hover {
   width: 270px;
   height: 270px;
+  /* transform: scale3d(); */
   transition: 0.4s;
 }
 
@@ -650,8 +654,7 @@ a {
 }
 
 .scroll-menu img:hover {
-  margin-left: 5px;
-  margin-right: 5px;
+  transform: scale(1.5s);
   display: flex;
   align-items: center;
   width: 120px;
@@ -700,6 +703,10 @@ footer .container {
   width: 24px;
   margin-right: 5px;
 }
+/* .left-footer .upper-part .right-sub-part a:hover {
+  margin: -20px;
+  transform: scale(10.5s);
+} */
 .left-footer .upper-part .right-sub-part h6 {
   color: #fff;
   font-size: 20px;
@@ -740,6 +747,7 @@ footer hr {
   background-color: #e5e5e5;
   padding: 15px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 
 .right-footer .scan-card .content h2 {
@@ -754,3 +762,20 @@ footer hr {
   margin-right: 7px;
 }
 
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) and (min-width: 993px) {
+  .left-footer .lower-part {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  }
+  .left-footer .lower-part .contact-us {
+    grid-column-start: 2;
+  }
+  footer .container {
+    grid-template-columns: 75% 25%;
+    grid-gap: 0;
+  }
+}
