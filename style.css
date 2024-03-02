@@ -901,3 +901,109 @@ footer hr {
     grid-gap: 0;
   }
 }
+
+/*navbar media queries */
+
+@media screen and (min-width:992px) and (max-width:1199px){
+  #main-navbar .container{
+    grid-template-rows: auto auto;
+    grid-template-columns: 20% 80%;
+    gap: 0;
+  }
+  #main-navbar .container .center-nav{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: end;
+    gap: 90px;
+  }
+  #main-navbar .container .left-nav{
+    grid-row: span 2;
+  }
+  .jobs-grids{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #latest-articles-section .container .articles-part{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reviews,
+  #meet-the-team .container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+} 
+
+@media screen and (max-width:992px){
+  footer .container {
+    grid-template-columns: 1fr;
+}
+  #meet-the-team .container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .reviews,
+  #latest-articles-section .container .articles-part,
+  .jobs-grids{
+    grid-template-columns: 1fr;
+  }
+  .hire-section .container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 20px;
+  }
+  .reviews .content h1{
+    width: 90%;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  .reviews{
+    gap: 30px;
+  }
+  .left-footer .lower-part {
+    display: grid;
+    justify-content: space-around;
+    color: #fff;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+  .right-footer .scan-card{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:767px){
+  #meet-the-team .container{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .reviews .content h1{
+    font-size: 22px;
+  }
+  .left-footer .lower-part {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  footer .container{
+    grid-template-columns: 1fr;
+  }
+  .job-type h3{
+    font-size: 18px;
+    padding: 12px;
+  }
+  .hire-section .container .content h2{
+    font-size: 32px;
+  }
+  .hire-section .container{
+    padding: 35px 30px;
+  }
+  #latest-articles-section .container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .right-footer .scan-card{
+    width: auto;
+  }
+}
