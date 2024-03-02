@@ -44,6 +44,8 @@
         }
       }
 
+
+
     </script>
 
 
@@ -51,6 +53,9 @@
   <!-- START OF NAVBAR -->
 
   <div class="section" id="main-navbar">
+    <div class="main-btn">
+      <i class="fas fa-bars fa-2x"></i>
+  </div>
     <div class="container">
       <div class="left-nav">
         <img src="/img/caamz-logo.png" alt="CAAMZ-LOGO">
@@ -567,6 +572,11 @@
 
     </div>
   </footer>
+
+<script>
+  
+  document.querySelector('.main-btn').addEventListener('click', () => document.querySelector('#main-navbar .center-nav').classList.toggle('show'));
+</script>
 
 </body>
 

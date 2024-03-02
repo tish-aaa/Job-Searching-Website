@@ -22,6 +22,15 @@ body {
   z-index: 50;
 }
 
+.main-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  display: none;
+}
+
 @media screen and (min-width: 1800px) {
   #main-navbar .container {
     max-width: 1750px;
@@ -117,7 +126,77 @@ body {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .main-btn {
+    display: block;
+  }
+  .main-btn:hover {
+    opacity: 0.6;
+  }
+  #main-navbar {
+    margin-right: 50px;
+    position: relative;
+  }
+  #main-navbar .center-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 50%;
+    height: 1000px;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+    z-index: 50;
+  }
+
+  #main-navbar .container .center-nav a.nav-item {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  #main-navbar .center-nav a.nav-item h6:last-child {
+    border-bottom: 0;
+  }
+
+  #main-navbar .center-nav.show {
+    transform: translateX(-20px);
+  }
+
+  #main-navbar .container {
+    display: flex;
+    grid-gap: unset;
+    width: 100%;
+    margin-left: 34px;
+    padding: 0;
+    gap: 40px;
+  }
+  #main-navbar .container .right-nav {
+    justify-content: center;
+  }
+}
+
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  #main-navbar .container {
+    grid-template-columns: 14% auto 36%;
+    grid-gap: 6%;
+  }
+
+  #main-navbar .container .center-nav {
+    gap: 40px;
+  }
+}
+
+@media screen and (maxx-width: 992px) {
+}
 
 /* MOST RECENT JOBS */
 
@@ -404,6 +483,30 @@ a {
   padding-left: 10px;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .jobs-grids {
+    grid-gap: 30px;
+  }
+  .job-type {
+    padding: 14px;
+    padding-left: 13px;
+    padding-top: 17px;
+  }
+  .job-type h3 {
+    margin-top: 14px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobs-grids {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
 /* REVIEWS SECTION */
 
 .image-logo {
@@ -539,6 +642,14 @@ a {
   font-weight: 400;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  #latest-articles-section .container .image-part img {
+    width: 100%;
+  }
+}
+
 /* MEET THE TEAM */
 
 @media screen and (min-width: 1400px) {
@@ -620,6 +731,18 @@ a {
 
 #meet-the-team .container .team-grid .designation h6 {
   font-weight: 800;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  #meet-the-team .container {
+    grid-gap: 20px;
+  }
+  #meet-the-team .container .team-grid .image-part {
+    width: 100%;
+    height: 225px;
+  }
 }
 
 /* TOP COMPANIES */
@@ -762,13 +885,12 @@ footer hr {
   margin-right: 7px;
 }
 
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) and (min-width: 993px) {
   .left-footer .lower-part {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
   .left-footer .lower-part .contact-us {
