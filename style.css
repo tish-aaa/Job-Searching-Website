@@ -127,7 +127,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .main-btn {
+  /* .main-btn {
     display: block;
   }
   .main-btn:hover {
@@ -167,6 +167,10 @@ body {
 
   #main-navbar .center-nav.show {
     transform: translateX(-20px);
+  } */
+
+  #main-navbar .center-nav {
+    display: none;
   }
 
   #main-navbar .container {
@@ -195,8 +199,6 @@ body {
   }
 }
 
-@media screen and (maxx-width: 992px) {
-}
 
 /* MOST RECENT JOBS */
 
