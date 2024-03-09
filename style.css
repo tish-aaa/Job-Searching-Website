@@ -179,7 +179,7 @@ body {
     width: 100%;
     margin-left: 34px;
     padding: 0;
-    gap: 40px;
+    gap: 0;
   }
   #main-navbar .container .right-nav {
     justify-content: center;
@@ -195,7 +195,15 @@ body {
   }
 
   #main-navbar .container .center-nav {
-    gap: 40px;
+    display: none;
+  }
+  #main-navbar .container .right-nav .btn.employer-login-btn {
+    width: auto;
+    font-size: 14px;
+  }
+  #main-navbar .container .right-nav .btn.candidate-login-btn {
+    width: auto;
+    font-size: 14px;
   }
 }
 
@@ -917,7 +925,7 @@ footer hr {
     grid-row-start: 2;
     grid-column-start: 2;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     gap: 90px;
   }
   #main-navbar .container .left-nav{
@@ -1008,6 +1016,17 @@ footer hr {
   }
   .right-footer .scan-card{
     width: auto;
+  }
+  #main-navbar .container .center-nav {
+    display: none;
+  }
+  #main-navbar .container .right-nav .btn.employer-login-btn {
+    width: auto;
+    font-size: 14px;
+  }
+  #main-navbar .container .right-nav .btn.candidate-login-btn {
+    width: auto;
+    font-size: 14px;
   }
 }
 
