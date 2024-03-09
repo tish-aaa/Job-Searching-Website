@@ -128,7 +128,6 @@ body {
 
 @media screen and (max-width: 992px) {
 
-  
 
   #main-navbar .container {
     display: flex;
@@ -156,8 +155,6 @@ body {
   }
 }
 
-@media screen and (maxx-width: 992px) {
-}
 
 /* MOST RECENT JOBS */
 
@@ -969,3 +966,4 @@ footer hr {
     width: auto;
   }
 }
+
